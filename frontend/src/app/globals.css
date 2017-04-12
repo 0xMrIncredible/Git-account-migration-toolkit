@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #0b0f14;
+  --surface: #141a22;
+  --border: #243041;
+  --text: #e8edf4;
+  --muted: #8b9cb3;
+  --accent: #3b82f6;
+  --accent-hover: #2563eb;
+  --success: #22c55e;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family:
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    Segoe UI,
+    Roboto,
+    sans-serif;
+  min-height: 100vh;
+}
+
+a {
+  color: var(--accent);
+}
+
+a:hover {
+  color: var(--accent-hover);
+}
+
+input,
+select,
+button {
+  font: inherit;
+}
+
+.field-input {
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  padding: 0.5rem 0.75rem;
+  outline: none;
+}
+
+.field-input:focus {
+  border-color: var(--accent);
+}
+
+.btn-secondary {
+  border-radius: 0.5rem;
+  border: 1px solid var(--border);
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+
+.btn-secondary:hover {
+  color: var(--text);
+}
+
+.repo-table-wrap {
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+}
+
+.repo-table {
+  table-layout: fixed;
+  width: 100%;
+  min-width: 920px;
+}
+
+.repo-table .cell-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.repo-table .cell-name-link {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 0;
+}
+
+.repo-table .date-filter {
+  min-width: 0;
+}
