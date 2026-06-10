@@ -43,3 +43,6 @@ Desktop.ini
 # Misc
 .cache/
 .turbo/
+
+# Project specific
+.githooks/
